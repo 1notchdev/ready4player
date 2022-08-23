@@ -1,11 +1,21 @@
+import { Navigation } from "../components/Nagivation";
+import { CounterSlider } from "../components/CounterSlider";
+import { InfiniteSlider } from "../components/InfiniteSlider";
+import { OfferSlider } from "../components/OfferSlider";
+import { BuildWithSlider } from "../components/BuildWithSlider";
+import { Footer } from "../components/Footer";
+
 export default function Home() {
   return (
-    <div className="container flex items-center p-4 mx-auto min-h-screen justify-center">
-      <main>
-        <h1 className="font-mono text-xl code">
-          Welcome to <span className="text-purple-700">Nextjs</span>, <span className="text-indigo-700">TailwindCSS</span> and <span className="text-gray-700">TypeScript</span>
-        </h1>
+    <div className="flex flex-col py-4 w-full min-h-screen bg-main overflow-hidden overscroll-none">
+      <Navigation />
+      <main className="flex flex-col justify-start items-center gap-28">
+        <CounterSlider />
+        <InfiniteSlider />
+        <OfferSlider title={"Special Offer"} />
+        <BuildWithSlider />
       </main>
+      <Footer />
     </div>
-  )
+  );
 }
