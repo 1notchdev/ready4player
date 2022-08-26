@@ -11,6 +11,9 @@ module.exports = {
         vibyBlue: "#00DEFF",
         whiteWithoutOpacity: "rgba(255, 255, 255, 0.05)",
       },
+      aspectRatio: {
+        '3/4': '3 / 4',
+      },
     },
   },
   variants: {},
