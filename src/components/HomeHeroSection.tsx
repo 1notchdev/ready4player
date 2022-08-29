@@ -75,13 +75,13 @@ const HomeHeroSection = () => {
           <button onClick={handlePrev}
             className="bg-second rounded-full h-[2rem] w-[2rem] absolute left-0 top-[50%] z-20 -translate-y-1/2 -translate-x-1/2 border border-white border-opacity-10 flex justify-center items-center hover:-translate-x-[60%] duration-300"
           >
-            <img src="./images/arrow.svg" />
+            <img src="/images/icons/arrow.svg" />
           </button>
 
           <button onClick={handleNext}
             className="bg-second rounded-full h-[2rem] w-[2rem] absolute right-0 top-[50%] z-20 -translate-y-1/2 translate-x-1/2 border border-white border-opacity-10 flex justify-center items-center rotate-180 hover:translate-x-[60%] duration-300"
           >
-            <img src="./images/arrow.svg" />
+            <img src="/images/icons/arrow.svg" />
           </button>
 
           {images.map((i: ImageSlide, index) => {

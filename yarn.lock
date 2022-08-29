@@ -165,6 +165,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@smastrom/react-rating@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@smastrom/react-rating/-/react-rating-1.0.5.tgz#ef3d383d662aa2ae77ce5fea7647bbc6cbf788fe"
+  integrity sha512-YHRCzZD8qyql877TLZ98H0i+imp6rNT7160oG0Kh1bpt+MLkYoPMcTdA58F6Ia9Sp7tM+1hJe95U3yZTQxvMjg==
+
 "@types/node@^17.0.21":
   version "17.0.45"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.45.tgz#2c0fafd78705e7a18b7906b5201a522719dc5190"
@@ -526,6 +531,11 @@ minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
+
+moment@^2.29.4:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 nanoid@^3.1.30, nanoid@^3.3.4:
   version "3.3.4"

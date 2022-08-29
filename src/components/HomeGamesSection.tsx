@@ -65,7 +65,7 @@ const HomeGamesSection = () => {
         <div className="bg-neutral-900 p-1 rounded-lg flex gap-x-1">
           {
             categories.map((category, idx) => (
-              <button className={`text-slate-100 px-3 py-2 rounded text-sm font-normal ${filter===category?"bg-neutral-700":"bg-transparent"}`}
+              <button key={idx} className={`text-slate-100 px-3 py-2 rounded text-sm font-normal ${filter===category?"bg-neutral-700":"bg-transparent"}`}
                 onClick={() => setFilter(category)}
               >{category}</button>
             ))

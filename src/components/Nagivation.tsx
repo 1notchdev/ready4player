@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="container mx-auto flex items-center justify-between pt-4 pb-10">
         <div className="flex items-center">
           <Link href={"/"}>
-            <img src="./images/logo.png" className="pr-10" />
+            <img src="/images/logo.png" className="pr-10" />
           </Link>
           <div className="text-gray-300 font-thin flex gap-6">
             <Link href={"/"}>
@@ -25,7 +25,7 @@ const Navigation = () => {
           </div>
         </div>
         <PrimaryButton className="rounded px-3 py-2">
-          <img src="./images/wallet.svg" className="mr-1" />
+          <img src="/images/icons/wallet.svg" className="mr-1" />
           <span>Connect Wallet</span>
         </PrimaryButton>
       </div>
