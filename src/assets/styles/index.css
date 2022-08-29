@@ -65,7 +65,12 @@ body {
 }
 
 .rp-card {
-  background: linear-gradient(157.95deg, #06090E 0%, #0E141F 52.63%, #06090E 113.53%);
+  background: linear-gradient(
+    157.95deg,
+    #06090e 0%,
+    #0e141f 52.63%,
+    #06090e 113.53%
+  );
 }
 
 .rp-tag {
@@ -73,15 +78,15 @@ body {
 }
 
 .rp-card .price-wrapper {
-  background: #03090D;
+  background: #03090d;
 }
 .rp-card .sale-percent {
   background: rgba(43, 113, 164, 0.2);
-  border: 1px solid #2B71A4;
+  border: 1px solid #2b71a4;
 }
 
 .rp-border-color {
-  border-color: #242E42;
+  border-color: #242e42;
 }
 
 .rp-bg-dark {
@@ -89,17 +94,16 @@ body {
 }
 
 .mask-gradient {
-  background: linear-gradient(0deg, #11141D 6.68%, rgba(17, 21, 30, 0) 100%);
+  background: linear-gradient(0deg, #11141d 6.68%, rgba(17, 21, 30, 0) 100%);
 }
 
 /* .bg-primary {
   background-color: #86F4FC;
 } */
 
-
 .build-with-slider .slick-slide .rp-card {
   transform: scale(0.85);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .build-with-slider .slick-slide.slick-active .rp-card {
   transform: scale(1);
