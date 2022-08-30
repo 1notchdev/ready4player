@@ -64,6 +64,14 @@ body {
   filter: grayscale(100%);
 }
 
+.rp-site-wrapper {
+  background: radial-gradient(6932.7% 1901.45% at -29.98% 47.04%, #06090E 0%, #0E141F 46.35%, #06090E 100%);
+}
+
+.rp-footer {
+  background: linear-gradient(90deg, #06090E 0%, #0E141F 46.35%, #06090E 100%);
+}
+
 .rp-card {
   background: linear-gradient(
     157.95deg,
@@ -91,6 +99,55 @@ body {
 
 .rp-bg-dark {
   background-color: rgba(10, 14, 22, 1);
+}
+
+.rp-rating {
+  max-width: 120px;
+}
+.rp-rating .rr--svg {
+  stroke: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(255, 255, 255, 1);
+}
+.rp-rating .rr--on .rr--svg,
+.rp-rating .rr--hf-svg-on .rr--svg {
+  fill: rgba(255, 255, 255, 1);
+}
+.rp-rating .rr--off .rr--svg,
+.rp-rating .rr--hf-svg-off .rr--svg {
+  fill: transparent;
+}
+.rp-rating .rr--svg-stop-1 {
+  stop-color: rgba(255, 255, 255, 1);
+}
+.rp-rating .rr--svg-stop-2 {
+  stop-color: transparent;
+}
+
+/* Headless UI Tabs styles */
+.rp-tab-list {
+  display: flex;
+  border-bottom: 1px solid #242E42;
+}
+.rp-tab-list button {
+  flex: auto;
+  outline: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: -1px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.rp-tab-list button[aria-selected="true"] {
+  color: rgba(255, 255, 255, 1);
+  border-color: #C4DCFD;
+}
+
+/* Headless UI Select styles */
+.rp-select-button {
+  width: 100%;
+  height: 40px;
 }
 
 .mask-gradient {

@@ -5,7 +5,7 @@ const Footer = () => {
   const [email, setEmail] = useState<string>("");
 
   return (
-    <footer className="w-full border-t-[0.3px] border-gray-500 py-10 mt-10">
+    <footer className="rp-footer w-full border-t-[0.3px] border-gray-500 py-10 mt-10">
       <div className="container mx-auto">
         <div className="flex w-full justify-between">
           <div className="flex flex-col gap-4 w-1/4">
@@ -43,35 +43,35 @@ const Footer = () => {
             <div className="flex gap-4">
               <Link href="https://twitter.com">
                 <img
-                  src="./community/twitter.svg"
+                  src="/community/twitter.svg"
                   height={20}
                   className="cursor-pointer hover:scale-150 hover:skew-x-6 transition-all duration-150"
                 />
               </Link>
               <Link href="https://discord.gg">
                 <img
-                  src="./community/discord.svg"
+                  src="/community/discord.svg"
                   height={20}
                   className="cursor-pointer hover:scale-150 hover:skew-x-6 transition-all duration-150"
                 />
               </Link>
               <Link href="https://t.co">
                 <img
-                  src="./community/telegram.svg"
+                  src="/community/telegram.svg"
                   height={20}
                   className="cursor-pointer hover:scale-150 hover:skew-x-6 transition-all duration-150"
                 />
               </Link>
               <Link href="https://youtube.com">
                 <img
-                  src="./community/youtube.svg"
+                  src="/community/youtube.svg"
                   height={20}
                   className="cursor-pointer hover:scale-150 hover:skew-x-6 transition-all duration-150"
                 />
               </Link>
               <Link href="https://medium.com">
                 <img
-                  src="./community/medium.svg"
+                  src="/community/medium.svg"
                   height={20}
                   className="cursor-pointer hover:scale-150 hover:skew-x-6 transition-all duration-150"
                 />

@@ -1,7 +1,7 @@
-const SecondaryButton = ({className, children, ...props}) => {
+const SecondaryButton = ({className="", children, ...props}) => {
     return (
         <button
-            className={`flex items-center bg-white hover:bg-teal-100 text-gray-800 ${className}`}
+            className={`flex items-center justify-center gap-1 bg-white/[0.05] hover:bg-white/[0.1] border border-gray-700 text-gray-100 rounded ${className}`}
             {...props}
         >{children}</button>
     )

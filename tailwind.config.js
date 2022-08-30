@@ -10,6 +10,10 @@ module.exports = {
         second: "#080F1B",
         vibyBlue: "#00DEFF",
         whiteWithoutOpacity: "rgba(255, 255, 255, 0.05)",
+        primary: "#86F4FC",
+        success: "#6EA42B",
+        warning: "#A4572B",
+        error: "#A42B2B"
       },
       aspectRatio: {
         '3/4': '3 / 4',

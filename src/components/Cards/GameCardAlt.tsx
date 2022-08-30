@@ -6,7 +6,7 @@ const GameCardAlt = ({gameData, ...props}) => {
             <img src={gameData.image} className="w-full h-full object-cover object-center absolute" />
             <div className="mask-gradient absolute w-full h-full top-0 left-0"></div>
             <div className="p-4 text-gray-100 absolute w-full bottom-0">
-                <p className="font-semibold mb-2">{gameData?.name}</p>
+                <p className="font-semibold text-sm mb-2">{gameData?.name}</p>
                 {
                     gameData?.tags?.length > 0 && <TagItems tags={gameData.tags} />
                 }
@@ -14,7 +14,7 @@ const GameCardAlt = ({gameData, ...props}) => {
                     {
                         gameData.sale? (
                             <>
-                                <div className="sale-percent px-2 py-1 rounded">{gameData.sale}</div>
+                                <div className="sale-percent text-xs px-2 py-1 rounded">{gameData.sale}</div>
                                 <p>
                                     <span className="text-gray-600 line-through pr-1">{`$${gameData.price}`}</span>
                                     <span>{`$${gameData.salePrice}`}</span>

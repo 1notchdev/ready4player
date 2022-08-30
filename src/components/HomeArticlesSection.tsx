@@ -2,9 +2,7 @@ import { ArrowRightIcon } from "@heroicons/react/outline";
 import PrimaryButton from "./Buttons/PrimaryButton";
 import { Article } from "../utils/Types";
 import ArticleCard from "./Cards/ArticleCard";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import ProgressbarSlider from "./Sliders/ProgressbarSlider";
 
 const articles:Array<Article> = [
     {
@@ -46,41 +44,12 @@ const articles:Array<Article> = [
 ]
 
 const HomeArticlesSection = ({title}) => {
-    const settings = {
-        dots: true,
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 500,
-        initialSlide: 0,
-        beforeChange: (current, next) => {
-            console.log(current);
-            console.log(next);
-        },
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
+    // const [curIndex, setCurIndex] = useState(0);
+    
+    // useEffect(() => {
+    //     const active_percent = (curIndex + 1)
+    // }, [curIndex])
+    
     return (
         <div className="container mx-auto">
             <div className="flex gap-x-3 items-center mb-3">
@@ -90,17 +59,15 @@ const HomeArticlesSection = ({title}) => {
                     <ArrowRightIcon className="w-4 h-4" />
                 </PrimaryButton>
             </div>
-            <div className="w-full overflow-hidden pb-[40px]">
-                <Slider {...settings}>
+            <ProgressbarSlider itemsCount={articles.length}>
                 {
                     articles.map((article, idx) => (
-                        <div className="px-2">
-                            <ArticleCard key={idx} article={article} />
+                        <div key={idx} className="px-2">
+                            <ArticleCard article={article} />
                         </div>
                     )) 
                 }
-                </Slider>
-            </div>
+            </ProgressbarSlider>
         </div>
     )
 }
