@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PrimaryButton from "./Buttons/PrimaryButton";
 import { CustomConnectButton } from "./Buttons/CustomConnectButton";
 
 const Navigation = () => {
@@ -9,7 +8,7 @@ const Navigation = () => {
         <div className="flex items-center">
           <Link href={"/"}>
             <img
-              src="./images/logo.png"
+              src="/images/logo.png"
               className="pr-10 hover:cursor-pointer"
             />
           </Link>

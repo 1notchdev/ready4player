@@ -41,7 +41,7 @@ export const CustomConnectButton = ({ username = "" }) => {
                     type="button"
                     className="flex items-center bg-teal-200 hover:bg-teal-300 text-gray-800 rounded px-3 py-2"
                   >
-                    <img src="./images/wallet.svg" className="mr-1" />
+                    <img src="/images/icons/wallet.svg" className="mr-1" />
                     <span>Connect Wallet</span>
                   </button>
                 );
@@ -95,9 +95,9 @@ export const CustomConnectButton = ({ username = "" }) => {
                     {username ? username : account.displayName}
                   </button>
 
-                  <Link href="/settings">
+                  <Link href={`/user/${account.address}`}>
                     <button className="text-white bg-gray-900 px-3 py-2 rounded-md gap-4 border border-gray-800 hover:bg-gray-800">
-                      <img src="./images/person.svg" className=" invert" />
+                      <img src="/images/person.svg" className=" invert" />
                     </button>
                   </Link>
                 </div>
