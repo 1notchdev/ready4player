@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="container mx-auto flex items-center justify-between pt-4 pb-10">
         <div className="flex items-center">
           <Link href={"/"}>
-            <img src="/images/logo.png" className="pr-10" />
+            <img src="/images/logo.png" className="pr-10 cursor-pointer" />
           </Link>
           <div className="text-gray-300 font-thin flex gap-6">
             <Link href={"/"}>

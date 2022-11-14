@@ -17,7 +17,7 @@ const Footer = () => {
                 placeholder={"Your email"}
                 className="text-sm text-white outline-none bg-[#131416] flex-1"
               />
-              <button className="text-vibyBlue hover:-translate-y-[2px] transition-all">
+              <button className="text-primary hover:-translate-y-[2px] transition-all">
                 I'm in
               </button>
             </div>

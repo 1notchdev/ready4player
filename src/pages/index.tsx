@@ -1,3 +1,4 @@
+// import HomeHeroSection1 from "../components/HomeHeroSection1";
 import HomeHeroSection from "../components/HomeHeroSection";
 import HomePartnersSection from "../components/HomePartnersSection";
 import HomeOffersSection from "../components/HomeOffersSection";
@@ -10,6 +11,7 @@ import DefaultLayout from "../components/DefaultLayout";
 export default function Home() {
   return (
     <DefaultLayout>
+      {/* <HomeHeroSection1 /> */}
       <HomeHeroSection />
       <HomePartnersSection />
       <HomeOffersSection title={"Special Offers"} />

@@ -1,12 +1,8 @@
-import { useState } from "react";
+import Slider from "react-slick";
 import { Game } from "../utils/Types";
 import PrimaryButton from "./Buttons/PrimaryButton";
 import GameCardAlt from "./Cards/GameCardAlt";
 import TagItem from "./TagItem";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const games: Array<Game> = [
   {
@@ -101,13 +97,6 @@ const HomeBuildWithSection = () => {
               }
             </Slider>
           </div>
-          {/* <Carousel
-            slides={slides}
-            goToSlide={goToSlide}
-            offsetRadius={2}
-            showNavigation={false}
-            animationConfig={config.gentle}
-          /> */}
         </div>
       </div>
     </div>

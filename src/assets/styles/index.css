@@ -7,6 +7,9 @@
 
 @import "tailwindcss/utilities";
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 body {
   font-family: "Be Vietnam Pro", sans-serif;
 }
@@ -74,10 +77,6 @@ body {
 
 .rp-card {
   background: linear-gradient(157.95deg, #06090E 0%, #0E141F 52.63%, #06090E 113.53%);
-}
-
-.rp-tag {
-  background: rgba(0, 0, 0, 0.6);
 }
 
 .rp-card .price-wrapper {
@@ -161,6 +160,38 @@ body {
 .build-with-slider .slick-slide.slick-active .rp-card {
   transform: scale(1);
 }
+
+.rp-slider .slick-list {
+  border: 1px solid #242E42;
+  border-radius: 0.5rem;
+}
+
+.rp-slider .slick-dots {
+  display: flex !important;
+  bottom: -35px;
+}
+.rp-slider .slick-dots li {
+  flex: auto;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
+.rp-slider .slick-dots li.slick-active {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+
+/* .home-hero-slider .slick-arrow {
+  width: 32px;
+  height: 32px;
+}
+
+.home-hero-slider .slick-arrow::before {
+  font-size: 32px;
+  color: rgba(8, 15, 27, 1);
+  border: 1px solid white;
+} */
 
 /* .shuffle-grid {
   display: grid;

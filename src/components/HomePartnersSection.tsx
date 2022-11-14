@@ -1,5 +1,4 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Slider from 'react-slick';
 
 const logos = [
   "./images/logo.png",
@@ -17,52 +16,53 @@ const logos = [
 ];
 
 const HomePartnersSection = () => {
-  const responsive = {
-		desktop: {
-			breakpoint: { max: 3000, min: 1280 },
-			items: 8,
-			slidesToSlide: 1 // optional, default to 1.
-		},
-		tablet: {
-			breakpoint: { max: 1280, min: 768 },
-			items: 6,
-			slidesToSlide: 1 // optional, default to 1.
-		},
-		mobile: {
-			breakpoint: { max: 768, min: 0 },
-			items: 3,
-			slidesToSlide: 1 // optional, default to 1.
-		}
-	};
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 10,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    touchMove: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   
   return (
-    <div className="w-full border-b-[0.5px] border-t-[0.5px] border-gray-600 py-4">
-      <Carousel
-        responsive={responsive}
-        arrows={false}
-        autoPlay
-        autoPlaySpeed={4}
-        centerMode={true}
-        customTransition="all 4s linear"
-        draggable={false}
-        swipeable={false}
-        focusOnSelect={false}
-        infinite
-        keyBoardControl={false}
-        renderButtonGroupOutside={false}
-        renderDotsOutside={false}
-        showDots={false}
-        transitionDuration={4000}
-      >
-        {logos.map((path, idx) => {
-          return <img key={idx} src={path} className="gray-image h-16 mx-auto"></img>;
-        })}
-      </Carousel>
-      {/* <div className="w-[150%] flex items-center h-20 justify-around absolute left-0 animate">
-        {logos.map((path, idx) => {
-          return <img key={idx} src={path} className="gray-image h-16"></img>;
-        })}
-      </div> */}
+    <div className="w-full border-b-[0.5px] border-t-[0.5px] border-gray-600 py-4 overflow-hidden">
+      <Slider {...settings}>
+        {
+          logos.map((path, idx) => (
+            <div key={idx} className='px-3'>
+              <img src={path} className="gray-image w-auto h-16 mx-auto object-contain" />
+            </div>
+          ))
+        }
+      </Slider>
     </div>
   );
 }

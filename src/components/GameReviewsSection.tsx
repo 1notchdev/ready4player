@@ -60,7 +60,7 @@ const GameReviewsSection = ({game}) => {
                     <div className="flex flex-col divide-y divide-gray-500 mt-3">
                         {
                             gameReviews.reviews.map((elem, idx) => (
-                                <GameReviewItem data={elem} className="py-5" />
+                                <GameReviewItem key={idx} data={elem} className="py-5" />
                             ))
                         }
                     </div>
