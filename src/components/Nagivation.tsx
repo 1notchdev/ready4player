@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PrimaryButton from "./Buttons/PrimaryButton";
+import { CustomConnectButton } from "./Buttons/CustomConnectButton";
 
 const Navigation = () => {
   return (
@@ -7,7 +7,10 @@ const Navigation = () => {
       <div className="container mx-auto flex items-center justify-between pt-4 pb-10">
         <div className="flex items-center">
           <Link href={"/"}>
-            <img src="/images/logo.png" className="pr-10 cursor-pointer" />
+            <img
+              src="/images/logo.png"
+              className="pr-10 hover:cursor-pointer"
+            />
           </Link>
           <div className="text-gray-300 font-thin flex gap-6">
             <Link href={"/"}>
@@ -24,13 +27,10 @@ const Navigation = () => {
             </Link>
           </div>
         </div>
-        <PrimaryButton className="rounded px-3 py-2">
-          <img src="/images/icons/wallet.svg" className="mr-1" />
-          <span>Connect Wallet</span>
-        </PrimaryButton>
+        <CustomConnectButton username={""} />
       </div>
     </nav>
   );
-}
+};
 
 export default Navigation;
