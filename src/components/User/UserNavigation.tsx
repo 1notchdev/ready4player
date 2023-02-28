@@ -40,7 +40,7 @@ const NavButton = ({ address, pathname, path, name }) => {
         className={`p-4 border-b-[0.5px] flex-1 text-center hover:cursor-pointer ${
           pathname === "/user/[address]" + path
             ? "border-blue-200"
-            : "border-border-black text-whiteWithHalfOpacity"
+            : "border-darkblue text-white/[0.5]"
         }`}
       >
         {name}

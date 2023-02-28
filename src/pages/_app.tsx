@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { AppProps } from "next/app";
-import "../assets/styles/index.css";
+import "../assets/styles/index.scss";
 import "@rainbow-me/rainbowkit/styles.css";
 
 import {

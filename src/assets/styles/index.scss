@@ -12,6 +12,7 @@
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
 }
 
 .container {
@@ -82,14 +83,13 @@ body {
     #0e141f 52.63%,
     #06090e 113.53%
   );
-}
-
-.rp-card .price-wrapper {
-  background: #03090d;
-}
-.rp-card .sale-percent {
-  background: rgba(43, 113, 164, 0.2);
-  border: 1px solid #2b71a4;
+  .price-wrapper {
+    background: #03090d;
+  }
+  .sale-percent {
+    background: rgba(43, 113, 164, 0.2);
+    border: 1px solid #2b71a4;
+  }
 }
 
 .rp-border-color {
@@ -102,45 +102,44 @@ body {
 
 .rp-rating {
   max-width: 120px;
-}
-.rp-rating .rr--svg {
-  stroke: rgba(255, 255, 255, 1) !important;
-  border-color: rgba(255, 255, 255, 1);
-}
-.rp-rating .rr--on .rr--svg,
-.rp-rating .rr--hf-svg-on .rr--svg {
-  fill: rgba(255, 255, 255, 1);
-}
-.rp-rating .rr--off .rr--svg,
-.rp-rating .rr--hf-svg-off .rr--svg {
-  fill: transparent;
-}
-.rp-rating .rr--svg-stop-1 {
-  stop-color: rgba(255, 255, 255, 1);
-}
-.rp-rating .rr--svg-stop-2 {
-  stop-color: transparent;
+  .rr--svg {
+    stroke: rgba(255, 255, 255, 1) !important;
+    border-color: rgba(255, 255, 255, 1);
+  }
+  .rr--on .rr--svg,
+  .rr--hf-svg-on .rr--svg {
+    fill: rgba(255, 255, 255, 1);
+  }
+  .rr--off .rr--svg,
+  .rr--hf-svg-off .rr--svg {
+    fill: transparent;
+  }
+  .rr--svg-stop-1 {
+    stop-color: rgba(255, 255, 255, 1);
+  }
+  .rr--svg-stop-2 {
+    stop-color: transparent;
+  }
 }
 
 /* Headless UI Tabs styles */
 .rp-tab-list {
   display: flex;
   border-bottom: 1px solid #242E42;
-}
-.rp-tab-list button {
-  flex: auto;
-  outline: none;
-  padding-bottom: 10px;
-  border-bottom: 1px solid transparent;
-  color: rgba(255, 255, 255, 0.3);
-  margin-bottom: -1px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.rp-tab-list button[aria-selected="true"] {
-  color: rgba(255, 255, 255, 1);
-  border-color: #C4DCFD;
+  button {
+    flex: auto;
+    outline: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: -1px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  button[aria-selected="true"] {
+    color: rgba(255, 255, 255, 1);
+    border-color: #C4DCFD;
+  }
 }
 
 /* Headless UI Select styles */
@@ -157,32 +156,41 @@ body {
   background-color: #86F4FC;
 } */
 
-.build-with-slider .slick-slide .rp-card {
-  transform: scale(0.85);
-  transition: all 0.5s ease-in-out;
-}
-.build-with-slider .slick-slide.slick-active .rp-card {
-  transform: scale(1);
+.build-with-slider {
+  .slick-slide {
+    .rp-card {
+      transform: scale(0.85);
+      transition: all 0.5s ease-in-out;
+    }
+    &.slick-active .rp-card {
+      transform: scale(1);
+    }
+  }
 }
 
-.rp-slider .slick-list {
-  border: 1px solid #242E42;
-  border-radius: 0.5rem;
+.rp-slider {
+  .slick-list {
+    border: 1px solid #242E42;
+    border-radius: 0.5rem;
+  }
+  .slick-dots {
+    display: flex !important;
+    bottom: -35px;
+    li {
+      flex: auto;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      font-weight: 400;
+      &.slick-active {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 500;
+      }
+    }
+  }
 }
 
-.rp-slider .slick-dots {
-  display: flex !important;
-  bottom: -35px;
-}
-.rp-slider .slick-dots li {
-  flex: auto;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  font-weight: 400;
-}
-.rp-slider .slick-dots li.slick-active {
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: 500;
+.r4p-dropzone {
+  
 }
 
 

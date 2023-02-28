@@ -13,3 +13,15 @@ export type Article = {
     description: string;
     posted_at: string;
 }
+
+export type GameFormData = {
+    email: string;
+    firstname: string;
+    lastname: string;
+    company: string;
+    website: string;
+    title: string;
+    description: string;
+    video: string;
+    files: File[];
+}
