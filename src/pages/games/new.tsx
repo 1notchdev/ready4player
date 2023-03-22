@@ -9,7 +9,6 @@ import { GameFormData } from "../../utils/Types";
 
 const GamesNew = () => {
   const [data, setData] = useState<GameFormData | null>(null);
-  // const [attachments, setAttachments] = useState<File[]>([]);
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setData({
       ...data,
@@ -17,7 +16,6 @@ const GamesNew = () => {
     })
   }
   const handleChangeAttachments = (files: File[]) => {
-    // setAttachments(files);
     setData({
       ...data,
       files: files
@@ -33,10 +31,7 @@ const GamesNew = () => {
         <PageTitle title="Submit a Game" />
         <p>To request your game be added to the Epic Games store please complete the following form.</p>
 
-        <form
-          className="w-full max-w-[800px] p-3 flex flex-col gap-5"
-          action=""
-        >
+        <form className="w-full max-w-[800px] p-3 flex flex-col gap-5">
           <Input
             type="text"
             id="email"
@@ -116,7 +111,7 @@ const GamesNew = () => {
             labelText="Video Link"
             placeholder="linkvideo.com/video4player.mp4"
             />
-          <Dropzone callback={handleChangeAttachments} />
+          <Dropzone onChange={handleChangeAttachments} />
           <div>
             <PrimaryButton className="w-full py-2"
               onClick={handleSubmit}

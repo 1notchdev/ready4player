@@ -3,11 +3,12 @@ import { useDropzone } from "react-dropzone";
 import Label from "./Label";
 import { XCircleIcon } from "@heroicons/react/outline";
 import SecondaryButton from "../Buttons/SecondaryButton";
+import { isFunction } from "../../utils/Helpers";
 const Dropzone = ({
     labelText="Add Attachments",
     id="",
     required = false,
-    callback = null
+    onChange = null
 }) => {
     const [attachments, setAttachments] = useState([]);
 
@@ -21,8 +22,8 @@ const Dropzone = ({
     });
 
     useEffect(() => {
-        if (callback instanceof Function) {
-            callback(attachments);
+        if (isFunction(onChange)) {
+            onChange(attachments);
         }
     }, [attachments]);
 
